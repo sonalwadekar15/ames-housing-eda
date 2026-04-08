@@ -78,7 +78,13 @@ ames-housing-eda/
 
 ## 💡 Key Insights
 
-> _To be updated as the analysis progresses._
+- 27 columns had missing values; high-missing columns (Pool QC, Alley, Fence) were dropped; others filled using median/mode.
+- Gr Liv Area vs SalePrice showed a moderate-strong positive correlation of 0.71 — larger homes command higher prices.
+- Most expensive neighbourhoods: NridgHt, NoRidge, StoneBr | Cheapest: BrDale, NPkVill.
+- Outliers detected and treated using IQR method and Z-score; capping and dropping applied as appropriate.
+- New features created: House Age, Total Bath, Total SF — reduced redundancy and improved interpretability.
+- Log transformation on SalePrice and Yeo-Johnson on Gr Liv Area significantly reduced skewness.
+- Dataset is now clean and ready for machine learning modelling.
 
 ---
 
